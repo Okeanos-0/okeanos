@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import AboutMe from './AboutMe';
+// import AboutMe from './AboutMe';
 
 const Home: FC = () => {
     return (
@@ -11,7 +11,7 @@ const Home: FC = () => {
                     A person who insterested in C#, React, and Typescript
                 </h1>
             </div>
-            <AboutMe />
+            {/* <AboutMe /> */}
         </div>
     );
 };
