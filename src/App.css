@@ -27,6 +27,7 @@ body {
 .btn-d:hover {
     background-color: rgb(47, 47, 51);
     border: 0;
+    color: white;
 }
 
 .card {
@@ -42,45 +43,4 @@ body {
 .btn:focus {
     outline: none;
     box-shadow: none;
-}
-
-.welcome-card {
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-    height: 640.6px;
-    font-size: 28.7px;
-    width: 1500px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgb(24, 25, 26);
-    color: white;
-    transition: 0.3s;
-    border-radius: 10px;
-}
-
-.welcome-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-    padding: 2px 16px;
-}
-
-.sub-welcome-card {
-    display: flex;
-    margin: auto;
-    margin-top: 34.6px;
-    margin-left: 700px;
-    height: 500px;
-    font-size: 28.7px;
-    width: 600px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgb(31, 30, 30);
-    color: white;
-    transition: 0.3s;
-    border-radius: 10px;
-}
-
-.sub-welcome-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(16, 128, 148, 0.2);
 }
