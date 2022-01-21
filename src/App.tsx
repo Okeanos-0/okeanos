@@ -16,7 +16,7 @@ const App: FC = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/okeanos/projects" element={<Projects />} />
+                <Route path="/projects" element={<Projects />} />
             </Routes>
         </div>
     );
