@@ -45,8 +45,6 @@ body {
     outline: none;
     box-shadow: none;
 }
-<<<<<<< Updated upstream
-=======
 
 .about-card {
     display: grid;
@@ -106,4 +104,3 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
->>>>>>> Stashed changes
