@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Nav, Navbar } from 'react-bootstrap';
 
@@ -7,13 +8,16 @@ const _Navbar: FC = () => {
         <div>
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand
-                    href="/"
                     style={{ marginLeft: '20px', marginBottom: '5px' }}
                 >
-                    Home
+                    <Link to="/" className="navbar-brand">
+                        Home
+                    </Link>
                 </Navbar.Brand>
                 <Nav>
-                    <Nav.Link href="/projects">Projects</Nav.Link>
+                    <Link to="/projects" className="nav-link">
+                        Projects
+                    </Link>
                 </Nav>
             </Navbar>
         </div>
