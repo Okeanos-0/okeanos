@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import Project from './Project';
+import Project from '../components/Project';
 
 import { Container, Row } from 'react-bootstrap';
 
-export interface FilteredProject {
-    name: string;
-    description: string;
-    fork: boolean;
-    html_url: string;
-}
+import { FilteredProject } from '../@types/types';
 
 interface State {
     username: string;
@@ -20,6 +15,7 @@ class Projects extends Component {
         username: 'Okeanos-0',
         projects: [],
     };
+
     async componentDidMount() {
         const projects = await (
             await fetch(
@@ -27,6 +23,11 @@ class Projects extends Component {
             )
         ).json();
         this.setState({ projects });
+    }
+    async componentWillUnmount() {
+        this.setState({
+            projects: [],
+        });
     }
     render(): React.ReactNode {
         return (
